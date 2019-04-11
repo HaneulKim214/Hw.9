@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Visualizaton Dashboard</title>
+        <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="Hw9.css">
+</head>
+
+<body>
+        <!-- block containing all nav-related tags -->
+        <div class="navigation">
+            <!-- "expand-lg" belongs to collapsing class-> stacks navbar
+            vertically on large screens -->
+            <!-- "navbar-light" : add black text to all navbars embedded inside -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" style="background-color: #0BADA6;" href="Hw9.html">Latitude</a>
+
+                <button class="navbar-toggler border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <!-- For dropdown -->
+
+                    <!-- ml-auto: margin-left auto: it automatically create left-space from nav-header -->
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <!-- dropdown on Plots -->
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Plots
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="max_temp.html">latitude vs. Max temp</a>
+                                <a class="dropdown-item" href="humid.html">latitude vs. Humidity</a>
+                                <a class="dropdown-item" href="cloudiness.html">latitude vs. Cloudiness</a>
+                                <a class="dropdown-item" href="wind.html">latitude vs. Wind Speed</a>
+                            </div>
+                        </li>
+                        <!-- non-dropdown navbars -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="comparison.html">Comparison</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="data.html">Data</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+
+      <!-- Container for contents -->
+      <!-- In BS4 grid system: rows must be inside div<.container>
+    columns must be direct children of .row -->
+    <div class="container">
+        <!-- ".rows": gives gap between boxes, "row" doesn't -->
+    <div class="row main">
+        <!-- creating summary box -->
+        <div class="col-lg-7 col-md-12" style="padding-bottom:30px;">
+            <div class="box">
+                <h3>Summary: Latitude vs. X</h3>
+                <!-- giving horizontal line -->
+                <hr>
+                <img class="home-img-1" src="Lat vs. Max Temp plot.png" alt="vs. MaxTemp plot">
+                
+                <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+                </p>
+                <br>
+                <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+            </div>
+        </div>
+
+        <!-- visualization box -->
+        <div class="col-lg-5 col-md-12 vis-images">
+            <!-- for all boxes -->
+            <div class="box">
+                <h3>Visualizations</h3>
+                <hr>
+
+                <div class="container-fluid">
+                <div class="row vis-img-pad">
+                    <div class="col-lg-6 col-md-3">
+                        <!-- creating an image as a link to that plot page -->
+                        <a href="max_temp.html">
+                        <img src="Lat vs. Max Temp plot.png" alt="vs. max temp plot">
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <a href="humid.html">
+                        <img src="Lat vs. Humidity.png" alt="vs. Humidity plot">
+                        </a>
+                    </div>
+                </div>
+                    <!-- for second line of plots in visualization box -->
+                <div class="row">
+                    <div class="col-lg-6 col-md-3">
+                        <a href="cloudiness.html">
+                        <img src="Lat vs. Cloudiness.png" alt="vs. cloud plot">  
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-md-3">
+                        <a href="wind.html">
+                        <img src="Lat vs. Windspeed.png" alt="vs. winspeed plot">
+                        </a>
+                    </div>
+                </div>
+            
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">&copy Copyright Haneul Kim 2019</div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+.navigation {
+    background-color: white;
+}
+.main {
+    padding-top: 50px;
+}
+body {
+    background-color: rgba(240, 230, 230, 0.856);
+}
+
+.home-img-1 {
+    float: left;
+}
+
+
+.box {
+    background-color: white;
+    padding: 20px 10px 20px 15px;
+}
+
+#nav-latitude {
+    color: rgba(0,0,0,.5);
+}
+
+.vis-box {
+    background-color: white;
+}
+
+.container {
+    padding: 0;
+}
+
+.vis-img-pad {
+    padding-bottom: 30px;
+}
+
+.vis-images img{
+    width:75%;
+    height: 75%;
+}
+
+footer{
+    background-color: #666666; 
+    border-top-style: solid; 
+    border-top-width: 5px; 
+    border-top-color: #0BADA6;
+    color: white; 
+    min-height: 55px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px; 
+    text-align: center; 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 15px; 
+    }
