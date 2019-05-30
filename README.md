@@ -4,7 +4,7 @@
 
 Creating a visualization dashboard website using visualizations we've created in a past assignment. Where all the images are stored in images folder
 
-Even though it is a simple topic I've tried and worked hard to understand all concepts.
+Even though it is a simple topic I've tried and worked hard to understand all concepts and learned core concepts in html, css, bootstrap and how they all work together.
 
 **Hardships:**
 - Since it was first time encountering front-end development I had hard time understanding bootstrap classes, what each classes do however
