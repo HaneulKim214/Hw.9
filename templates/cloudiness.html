@@ -10,15 +10,17 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
+
   <!--CSS Link-->
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+
 </head>
 
 <body>
   <!-- Navigation Section -->
   <div class="navigation">
     <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" style="background-color: #0BADA6;" href="Hw9.html.html">Latitude</a>
+      <a class="navbar-brand" style="background-color: #0BADA6;" href="../main.html">Latitude</a>
       <button class="navbar-toggler border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -33,8 +35,8 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
               <a class="dropdown-item" href="humid.html">Humidity</a>
-              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-              <a class="dropdown-item active" href="wind.html">Wind Speed</a>
+              <a class="dropdown-item active" href="cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="wind.html">Wind Speed</a>
             </div>
           </li>
           <li class="nav-item">
@@ -54,12 +56,12 @@
       <div class="col-lg-7 col-md-12">
         <!-- Left box  -->
         <div class="box">
-          <h3 class="title">Wind Speed</h3>
+          <h3 class="title">Cloudiness</h3>
           <hr>
-          <img src="Lat vs. Windspeed.png" alt="Wind Speed Graph">
-          <p>Wind speed appears to slightly increase as we move away from the equator. However, to conclusively
-            describe a pattern, we would need to go beyond the range in data to reach cities at closer to the poles.
-            Only then can we have a sample large to confirm the pattern.</p>
+          <img src="../static/images/Lat vs. Cloudiness.png" alt="Cloudines Graph">
+          <p>Cloudiness does not show a strong correlation to latitude. The visualization shows a great variety of
+            cloudiness percentages at different latitudes. Therefore, we cannot conclude that there is a conclusive
+            pattern between cloudiness and latitude.</p>
         </div>
       </div>
       <div class="col-lg-5 col-md-12">
@@ -67,32 +69,39 @@
         <div class="box">
           <h5 class="title">Visualizations</h5>
           <hr>
+
+
           <div class="container">
             <div class="row" style="padding-bottom: 30px;">
               <div class="col-6">
-                <a href="max_temp.html">
-                  <img class="panel" src="Lat vs. Max Temp plot.png" alt="Max Temperature Image">
+                <a href="max_tempe.html">
+                  <img class="panel" src="../static/images/Lat vs. Max Temp plot.png" alt="Max Temperature Image">
                 </a>
               </div>
               <div class="col-6">
                 <a href="humid.html">
-                  <img class="panel" src="Lat vs. Humidity.png" alt="Humidity Graph">
+                  <img class="panel" src="../static/images/Lat vs. Humidity.png" alt="Humidity Graph">
                 </a>
               </div>
             </div>
+
             <div class="row" style="padding-bottom: 30px;">
               <div class="col-6">
                 <a href="cloudiness.html">
-                  <img class="panel" src="Lat vs. Cloudiness.png" alt="Cloudiness Graph">
+                  <img class="panel active" src="../static/images/Lat vs. Cloudiness.png" alt="Cloudiness Graph">
                 </a>
               </div>
               <div class="col-6">
                 <a href="wind.html">
-                  <img class="panel active" src="Lat vs. Windspeed.png" alt="Wind Speed Graph">
+                  <img class="panel" src="../static/images/Lat vs. Windspeed.png" alt="Wind Speed Graph">
                 </a>
               </div>
+
+
             </div>
           </div>
+
+
         </div>
       </div>
     </div>
@@ -109,6 +118,7 @@
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+
 </body>
 
 </html>

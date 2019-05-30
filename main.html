@@ -5,7 +5,7 @@
     <title>Visualizaton Dashboard</title>
         <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="Hw9.css">
+    <link rel="stylesheet" href="static/css/Mainstyle.css">
 </head>
 
 <body>
@@ -15,7 +15,7 @@
             vertically on large screens -->
             <!-- "navbar-light" : add black text to all navbars embedded inside -->
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" style="background-color: #0BADA6;" href="Hw9.html">Latitude</a>
+                <a class="navbar-brand" style="background-color: #0BADA6;" href="main.html">Latitude</a>
 
                 <button class="navbar-toggler border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -33,18 +33,18 @@
                             </a>
 
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="max_temp.html">latitude vs. Max temp</a>
-                                <a class="dropdown-item" href="humid.html">latitude vs. Humidity</a>
-                                <a class="dropdown-item" href="cloudiness.html">latitude vs. Cloudiness</a>
-                                <a class="dropdown-item" href="wind.html">latitude vs. Wind Speed</a>
+                                <a class="dropdown-item" href="templates/max_temp.html">latitude vs. Max temp</a>
+                                <a class="dropdown-item" href="templates/humid.html">latitude vs. Humidity</a>
+                                <a class="dropdown-item" href="templates/cloudiness.html">latitude vs. Cloudiness</a>
+                                <a class="dropdown-item" href="templates/wind.html">latitude vs. Wind Speed</a>
                             </div>
                         </li>
                         <!-- non-dropdown navbars -->
                         <li class="nav-item">
-                            <a class="nav-link" href="comparison.html">Comparison</a>
+                            <a class="nav-link" href="templates/comparison.html">Comparison</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="data.html">Data</a>
+                            <a class="nav-link" href="templates/data.html">Data</a>
                         </li>
                     </ul>
                 </div>
@@ -64,7 +64,7 @@
                 <h3>Summary: Latitude vs. X</h3>
                 <!-- giving horizontal line -->
                 <hr>
-                <img class="home-img-1" src="Lat vs. Max Temp plot.png" alt="vs. MaxTemp plot">
+                <img class="home-img-1" src="static/images/Lat vs. Max Temp plot.png" alt="vs. MaxTemp plot">
                 
                 <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
                 </p>
@@ -84,26 +84,26 @@
                 <div class="row vis-img-pad">
                     <div class="col-lg-6 col-md-3">
                         <!-- creating an image as a link to that plot page -->
-                        <a href="max_temp.html">
-                        <img src="Lat vs. Max Temp plot.png" alt="vs. max temp plot">
+                        <a href="templates/max_temp.html">
+                        <img src="static/images/Lat vs. Max Temp plot.png" alt="vs. max temp plot">
                         </a>
                     </div>
                     <div class="col-6 col-md-3">
-                        <a href="humid.html">
-                        <img src="Lat vs. Humidity.png" alt="vs. Humidity plot">
+                        <a href="templates/humid.html">
+                        <img src="static/images/Lat vs. Humidity.png" alt="vs. Humidity plot">
                         </a>
                     </div>
                 </div>
                     <!-- for second line of plots in visualization box -->
                 <div class="row">
                     <div class="col-lg-6 col-md-3">
-                        <a href="cloudiness.html">
-                        <img src="Lat vs. Cloudiness.png" alt="vs. cloud plot">  
+                        <a href="templates/cloudiness.html">
+                        <img src="static/images/Lat vs. Cloudiness.png" alt="vs. cloud plot">  
                         </a>
                     </div>
                     <div class="col-lg-6 col-md-3">
-                        <a href="wind.html">
-                        <img src="Lat vs. Windspeed.png" alt="vs. winspeed plot">
+                        <a href="templates/wind.html">
+                        <img src="static/images/Lat vs. Windspeed.png" alt="vs. winspeed plot">
                         </a>
                     </div>
                 </div>
